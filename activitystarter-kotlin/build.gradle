@@ -20,12 +20,12 @@ for (File file : sdkHandler.sdkLoader.repositories) {
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
         minSdkVersion rootProject.ext.minSdkVersion
         testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
     }
+    buildToolsVersion '27.0.3'
 }
 
 sourceCompatibility = rootProject.ext.sourceCompatibilityVersion

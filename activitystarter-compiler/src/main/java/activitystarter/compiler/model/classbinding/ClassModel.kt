@@ -22,7 +22,7 @@ class ClassModel(
                 .createSublists { it.isOptional }
                 .distinctBy { it.map { it.typeName } }
 
-    internal fun getClasGeneration(): ClassGeneration = when (knownClassType) {
+    internal fun getClassGeneration(): ClassGeneration = when (knownClassType) {
         Activity -> ActivityGeneration(this)
         Fragment -> FragmentGeneration(this)
         Service -> ServiceGeneration(this)
